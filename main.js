@@ -5,7 +5,10 @@ function change_picture_part(element) {
     let currentId = element.getAttribute('id');
     console.log(currentId);
     switch (currentId) {
+        // switch: if ID = part1 just use pictures that is the top of main pictures. And part2, 3, 4, 5 same.
+        // if: set data-name for each element. And change this when click as a loop, if the value of data-name is A, change to B; B change to C; C change to A;
         case 'part1':
+
             if (dataName == 'monkey') {
                 element.src = './img/funny-cat1_part1x1.jpg';
                 element.setAttribute('data-name', 'funny')
